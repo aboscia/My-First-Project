@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 <section>
     <nav>
-        <img src="./assets/FES.svg" alt="">
+        <img src="./assets/FES.svg" class="logo" alt="Frontend Simplified Logo">
 
         <ul>
             <li><a href="#about">About</a></li>
@@ -17,52 +19,61 @@
         </ul>
     </nav>
     <header>
-        <div>
-            <h1>Best place to learn frontend</h1>
-           <p>Go from being an absolute beginner to a pro with a simplified process</p>
+        <div class="row">
+            <div>
+         <h1>Best place to learn frontend</h1>
+           <p class="subheader">Go from being an absolute beginner to a pro with a simplified process</p>
            <button>Start now</button>
-        </div>
+           </div>
         <figure>
             <img src="./assets/laptop.png" alt="Home page image">
         </figure>
+        </div>
     </header>
 </section>
 
 <main>
 <section id="about">
     <h2>About</h2>
-    <div>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum nostrum soluta assumenda beatae enim ipsam tempore qui adipisci et commodi.ipsum dolor sit amet, consectetur adipisicing elit. Ullam officia ipsa eveniet laborum animi suscipit sunt maxime voluptates quaerat, eos, deserunt, at doloremque. Reprehenderit, praesentium reiciendis expedita velit saepe dolore?</p>
+    <div class="section__description">
+        <div class="section__description--wrapper">
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum nostrum soluta assumenda beatae enim ipsam tempore qui adipisci et commodi.ipsum dolor sit amet, consectetur adipisicing elit. Ullam officia ipsa eveniet laborum animi suscipit sunt maxime voluptates quaerat, eos, deserunt, at doloremque. Reprehenderit, praesentium reiciendis expedita velit saepe dolore?</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident sequi eum ex, aliquid non a quis maxime cum fugit? Et?ipsum dolor sit amet, consectetur adipisicing elit. Ullam officia ipsa eveniet laborum animi suscipit sunt maxime voluptates quaerat, eos, deserunt, at doloremque. Reprehenderit, praesentium reiciendis expedita velit saepe dolore?</p>
     </div>
-    <figure>
+    <figure class="about__img--wrapper">
         <img src="./assets/about.jpg" alt="About">
     </figure>
+    </div>
 </section>
 
 <section id="discord">
     <h2>Discord</h2>
-<figure>
+<div class="row">
+    <div class="section__description">
+        <figure class="about__img--wrapper">
     <img src="./assets/discord.png" alt="Discord">
 </figure>
-<div>
-    <p>
+<div class="section__description--wrapper">
+    <p class="section__description--para">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium consequuntur minima quos quibusdam eveniet qui repellat perspiciatis suscipit doloremque dolorum.
     </p>
-    <p>
+    <p class="section__description--para">
        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quae cumque tenetur consequatur ipsam qui, quasi hic velit enim repudiandae. 
     </p>
+</div>
+</div>
 </div>
 </section>
 
 <section id="contact">
     <h2>Contact</h2>
     <form action="">
-        <label for="Email"></label>
+        <span>Email</span>
         <input type="text" placeholder="jane@example.com">
-        <label for="Message"></label>
-        <textarea type="text" placeholder="">
-    </form>
+        <span>Message</span>
+        <textarea type="text" placeholder="Cool website,lets get connected!">
+    <button>Contact Us!</button>
+        </form>
 </section>
 </main>
 
@@ -78,6 +89,5 @@
         Copyright Frontend Simplified
     </p>
 </footer>
-<section></section>
 </body>
 </html>
